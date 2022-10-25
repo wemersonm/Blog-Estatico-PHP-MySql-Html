@@ -1,10 +1,8 @@
 <?php
-
+// requerindo dados das paginas
 require_once 'select.php';
 require_once 'selectCategorias.php';
-
 ?>
-
 <i>Categorias</i>
 
 <ul>
@@ -12,11 +10,8 @@ require_once 'selectCategorias.php';
         <li><a href="pageCategorias.php?nome=<?= $categoria['nome'] ?>"><?= $categoria['nome'] ?> </a></li>
     <?php endforeach; ?>
 </ul>
-
 <hr>
-
 <h1>Posts</h1>
-
 <div>
     <?php foreach ($posts as $post) : ?>
 
@@ -26,5 +21,4 @@ require_once 'selectCategorias.php';
         </a>
         <hr>
     <?php endforeach; ?>
-
 </div>
